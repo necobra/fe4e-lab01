@@ -1,22 +1,536 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-   <head itemscope itemtype="http://schema.org/WebSite">
+<head itemscope itemtype="http://schema.org/WebSite">
 
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="msapplication-tap-highlight" content="no">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="msapplication-tap-highlight" content="no">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <title>Project</title>
+   <title>Project</title>
 
-      <link rel="stylesheet" href="./css/app.css">
+   <link rel="stylesheet" href="./css/app.css">
+   <link rel="stylesheet" href="./css/style.css">
 
-   </head>
+</head>
 
-   <body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
 
-      <script type="text/javascript" src="../build/app.js"></script>
-      
-  </body>
+
+   <div class="back">
+      <div class="front">
+         <header class="header">
+            <div class="inline-container">
+               <div class="header-upper">
+                  <div class="header-title">
+                     <span>Teachinder</span>
+                  </div>
+                  <div class="header-search">
+                     <input type="text" placeholder="Name, note or age to search" class="search-input">
+                     <button class="search-btn">
+                        Search
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="inline-container">
+               <div class="header-menu">
+                  <div class="header-menu-left">
+                     <button class="header-menu-b1">
+                        Teachers
+                     </button>
+                     <button class="header-menu-b2">
+                        Statistics
+                     </button>
+                     <button class="header-menu-b3">
+                        Favorites
+                     </button>
+                     <button class="header-menu-b4">
+                        About
+                     </button>
+                  </div>
+                  <div class="header-menu-right">
+                     <button class="add-teacher-btn" id="add-teacher-btn">
+                        Add teacher
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main class="main">
+            <hr>
+            <div class="inline-container">
+               <section class="top-teachers">
+                  <h2 class="title">Top Teachers</h2>
+                  <div class="top-teachers-filter">
+                     <div class="filter-age">
+                        <div class="filter-text">
+                           Age
+                        </div>
+                        <select name="" id="">
+                           <option value="value1 selected">18-31</option>
+                           <option value="value2">32-50</option>
+                           <option value="value3">51+</option>
+                        </select>
+                     </div>
+                     <hr>
+                     <div class="filter-region">
+                        <div class="filter-text">
+                           Region
+                        </div>
+                        <select name="" id="">
+                           <option value="value1 selected">Europe</option>
+                           <option value="value2">Asia</option>
+                           <option value="value3">Omerica</option>
+                        </select>
+                     </div>
+                     <hr>
+                     <div class="filter-sex">
+                        <div class="filter-text">
+                           Sex
+                        </div>
+                        <select name="" id="">
+                           <option value="value1 selected">Male</option>
+                           <option value="value2">Female</option>
+                        </select>
+                     </div>
+                     <hr>
+                     <div class="filter-photo">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Only with photo</label>
+                     </div>
+                     <hr>
+                     <div class="filter-favorites">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Only favorites</label>
+                     </div>
+                  </div>
+                  <div class="top-teachers-list">
+                     <article class="teacher-card" id="teacher-card">
+                        <div class="teacher-ava">
+                           <img src="images/photos/download.png" alt="teacher-photo">
+                        </div>
+                        <div class="teacher-name">
+                           Ihor <br> Tkachuk
+                        </div>
+                        <div class="teacher-subject">
+                           Chemistry
+                        </div>
+                        <div class="teacher-country">
+                           Ukraine
+                        </div>
+                     </article>
+                     <article class="teacher-card">
+                        <div class="teacher-ava">
+                           <img src="images/photos/download2.png" alt="teacher-photo">
+                        </div>
+                        <div class="teacher-name">
+                           Maria <br> Rodriguez
+                        </div>
+                        <div class="teacher-subject">
+                           Mathematics
+                        </div>
+                        <div class="teacher-country">
+                           Spain
+                        </div>
+                     </article>
+                     <article class="teacher-card">
+                        <div class="teacher-ava">
+                           <img src="images/photos/download3.png" alt="teacher-photo">
+                        </div>
+                        <div class="teacher-name">
+                           Ahmed <br> Ali
+                        </div>
+                        <div class="teacher-subject">
+                           History
+                        </div>
+                        <div class="teacher-country">
+                           Egypt
+                        </div>
+                     </article>
+                     <article class="teacher-card">
+                        <div class="teacher-ava">
+                           <img src="images/photos/download4.png" alt="teacher-photo">
+                        </div>
+                        <div class="teacher-name">
+                           Sophie <br> Dupont
+                        </div>
+                        <div class="teacher-subject">
+                           French
+                        </div>
+                        <div class="teacher-country">
+                           France
+                        </div>
+                     </article>
+                     <article class="teacher-card">
+                        <div class="teacher-ava">
+                           <img src="images/photos/download5.png" alt="teacher-photo">
+                        </div>
+                        <div class="teacher-name">
+                           Pedro <br> Silva
+                        </div>
+                        <div class="teacher-subject">
+                           Physics
+                        </div>
+                        <div class="teacher-country">
+                           Brazil
+                        </div>
+                     </article>
+                     <article class="teacher-card">
+                        <div class="teacher-ava">
+                           <img src="images/photos/download6.png" alt="teacher-photo">
+                        </div>
+                        <div class="teacher-name">
+                           Yuki <br> Tanaka
+                        </div>
+                        <div class="teacher-subject">
+                           Japanese
+                        </div>
+                        <div class="teacher-country">
+                           Japan
+                        </div>
+                     </article>
+                     <article class="teacher-card">
+                        <div class="no-photo"><span>A.P</span></div>
+                        <div class="teacher-name">
+                           Anna <br> Petrova
+                        </div>
+                        <div class="teacher-subject">
+                           Literature
+                        </div>
+                        <div class="teacher-country">
+                           Russia
+                        </div>
+                     </article>
+
+                     <article class="teacher-card">
+                        <div class="no-photo"><span>C.F</span></div>
+                        <div class="teacher-name">
+                           Carlos <br> Fernandez
+                        </div>
+                        <div class="teacher-subject">
+                           Spanish
+                        </div>
+                        <div class="teacher-country">
+                           Mexico
+                        </div>
+                     </article>
+
+                  </div>
+               </section>
+            </div>
+            <hr>
+            <div class="inline-container">
+               <section class="statistics">
+                  <h2 class="title">
+                     Statistics
+                  </h2>
+                  <table class="statistics-table">
+                     <thead>
+                        <tr>
+                           <th>Name</th>
+                           <th>Speciality</th>
+                           <th>Age</th>
+                           <th>Gender</th>
+                           <th>Nationality</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Daisy Alexsander</td>
+                           <td>Chemistry</td>
+                           <td>28</td>
+                           <td>Female</td>
+                           <td>Ireland</td>
+                        </tr>
+                        <tr>
+                           <td>Maxwell Johnson</td>
+                           <td>Physics</td>
+                           <td>35</td>
+                           <td>Male</td>
+                           <td>Canada</td>
+                        </tr>
+                        <tr>
+                           <td>Luna Rodriguez</td>
+                           <td>Biology</td>
+                           <td>22</td>
+                           <td>Female</td>
+                           <td>Mexico</td>
+                        </tr>
+                        <tr>
+                           <td>Ethan Kim</td>
+                           <td>Mathematics</td>
+                           <td>31</td>
+                           <td>Male</td>
+                           <td>South Korea</td>
+                        </tr>
+                        <tr>
+                           <td>Olivia Smith</td>
+                           <td>Geology</td>
+                           <td>27</td>
+                           <td>Female</td>
+                           <td>Australia</td>
+                        </tr>
+                        <tr>
+                           <td>Noah Wang</td>
+                           <td>Computer Science</td>
+                           <td>29</td>
+                           <td>Male</td>
+                           <td>China</td>
+                        </tr>
+                        <tr>
+                           <td>Ava Patel</td>
+                           <td>Astronomy</td>
+                           <td>26</td>
+                           <td>Female</td>
+                           <td>India</td>
+                        </tr>
+                        <tr>
+                           <td>William Lopez</td>
+                           <td>Environmental Science</td>
+                           <td>30</td>
+                           <td>Male</td>
+                           <td>Argentina</td>
+                        </tr>
+                        <tr>
+                           <td>Sophia Nguyen</td>
+                           <td>Psychology</td>
+                           <td>24</td>
+                           <td>Female</td>
+                           <td>Vietnam</td>
+                        </tr>
+                        <tr>
+                           <td>James Martinez</td>
+                           <td>History</td>
+                           <td>33</td>
+                           <td>Male</td>
+                           <td>Spain</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <div class="pages">
+                     <button>1</button>
+                     <button>2</button>
+                     <button>3</button>
+                     <button>...</button>
+                     <button>Last</button>
+                  </div>
+               </section>
+            </div>
+            <hr>
+            <div class="small-inline-container">
+               <section class="favorites">
+                  <h2 class="title">Favorites</h2>
+                  <div class="favorites-list">
+                     <button class="arrow arrow-left">
+                        <div></div>
+                        <div></div>
+                     </button>
+                     <div class="favorites-cards">
+                        <article class="teacher-card">
+                           <div class="teacher-ava">
+                              <img src="images/photos/download.png" alt="teacher-photo">
+                           </div>
+                           <div class="teacher-name">
+                              Ihor <br> Tkachuk
+                           </div>
+                           <div class="teacher-country">
+                              Ukraine
+                           </div>
+                        </article>
+                        <article class="teacher-card">
+                           <div class="teacher-ava">
+                              <img src="images/photos/download2.png" alt="teacher-photo">
+                           </div>
+                           <div class="teacher-name">
+                              Maria <br> Rodriguez
+                           </div>
+                           <div class="teacher-country">
+                              Spain
+                           </div>
+                        </article>
+                        <article class="teacher-card">
+                           <div class="teacher-ava">
+                              <img src="images/photos/download3.png" alt="teacher-photo">
+                           </div>
+                           <div class="teacher-name">
+                              Ahmed <br> Ali
+                           </div>
+                           <div class="teacher-country">
+                              Egypt
+                           </div>
+                        </article>
+                        <article class="teacher-card">
+                           <div class="teacher-ava">
+                              <img src="images/photos/download4.png" alt="teacher-photo">
+                           </div>
+                           <div class="teacher-name">
+                              Sophie <br> Dupont
+                           </div>
+                           <div class="teacher-country">
+                              France
+                           </div>
+                        </article>
+                        <article class="teacher-card">
+                           <div class="teacher-ava">
+                              <img src="images/photos/download5.png" alt="teacher-photo">
+                           </div>
+                           <div class="teacher-name">
+                              Pedro <br> Silva
+                           </div>
+                           <div class="teacher-country">
+                              Brazil
+                           </div>
+                        </article>
+
+                     </div>
+                     <button class="arrow arrow-right">
+                        <div></div>
+                        <div></div>
+                     </button>
+                  </div>
+               </section>
+            </div>
+            <hr>
+         </main>
+         <footer>
+            <div class="inline-container">
+               <section class="bottom-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a ullamcorper mi. Vestibulum
+                     ipsum massa, suscipit at scelerisque et, condimentum sit amet ligula. Aenean gravida purus urna, et
+                     viverra tellus varius non. Pellentesque sit amet augue ac sem facilisis porta. Ut eros velit,
+                     accumsan vitae mi non, venenatis eleifend quam.</p>
+                  <p>Sed eu nulla in metus mollis posuere. Nulla sodales nunc sit amet ex aliquam sagittis.</p>
+                  <p>Aliquam lectus nulla, euismod eget egestas vitae, dapibus in odio.</p>
+               </section>
+               <div class="end-menu">
+                  <div class="header-menu-left">
+                     <button class="header-menu-b1">
+                        Teachers
+                     </button>
+                     <button class="header-menu-b2">
+                        Statistics
+                     </button>
+                     <button class="header-menu-b3">
+                        Favorites
+                     </button>
+                     <button class="header-menu-b4">
+                        About
+                     </button>
+                  </div>
+                  <div class="header-menu-right">
+                     <button class="add-teacher-btn" id="add-teacher-btn">
+                        Add teacher
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </div>
+   <!--  -->
+   <div id="popup-add-teacher" class="popup-add-teacher-container">
+      <div class="popup-content">
+         <div class="add-teacher-header">Add teacher
+            <button class="close-button" id="closePopupAddTeacher">&times;</button>
+         </div>
+         <form class="add-teacher-form">
+            <div class="form-group form-name">
+               <label for="name">Name</label>
+               <input type="text" id="name" name="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group form-spec">
+               <label for="speciality">Speciality</label>
+               <select id="speciality" name="speciality" required>
+                  <option value="mathematics">Mathematics</option>
+                  <option value="chemistry">Chemistry</option>
+                  <option value="english">English</option>
+                  <option value="french">French</option>
+                  <option value="spanish">Spanish</option>
+               </select>
+            </div>
+            <div class="form-group form-country">
+               <label for="country">Country</label>
+               <select id="country" name="country" required>
+                  <option value="mathematics">Ukraine</option>
+                  <option value="chemistry">Spain</option>
+                  <option value="english">France</option>
+                  <option value="french">UK</option>
+                  <option value="spanish">USA</option>
+               </select>
+            </div>
+            <div class="form-group form-city">
+               <label for="city">City</label>
+               <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group form-email">
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group form-phone">
+               <label for="phone">Phone</label>
+               <input type="text" id="phoe" name="phone" required>
+            </div>
+            <div class="form-group form-date">
+               <label for="birth">Date of birth</label>
+               <input type="date" id="birth" name="birth" required>
+            </div>
+            <div class="form-group form-sex">
+               <label for="sex">Sex</label>
+               <div class="radio-container">
+                  <label for="sex">Male</label>
+                  <input type="radio" id="sex" name="sex" required>
+                  <label for="sex">Female</label>
+                  <input type="radio" id="sex" name="sex" required>
+               </div>
+            </div>
+            <div class="form-group form-color">
+               <label for="color">Background color</label>
+               <input type="color" id="color" name="color" required>
+            </div>
+            <div class="form-group form-notes">
+               <label for="notes">Notes (optional)</label>
+               <textarea name="notes" id="notes" cols="43" rows="7"></textarea>
+            </div>
+            <button type="submit" class="form-add">Add</button>
+         </form>
+      </div>
+   </div>
+   <div id="popup-description" class="popup-description-container">
+      <!-- Вміст попапа -->
+      <div class="popup-content">
+         <div class="teacher-desc-header">
+            Teacher Info
+            <button class="close-button" id="closePopup">&times;</button>
+         </div>
+         <div class="teacher-info">
+            <div class="teacher-main-info">
+               <img class="teacher-desc-ava" src="images/photos/download.png" alt="teacher-photo">
+               <div class="teacher-no-ava">
+                  <div class="teacher-desc-name">Ihor Tkachuk</div>
+                  <div class="teacher-desc-subject">Chemistry</div>
+                  <div class="teacher-desc-place">Kyiv, Ukraine</div>
+                  <div class="teacher-desc-age-sex">35, Male</div>
+                  <!-- <a class="teacher-desc-email" href="ihor_tckachuk@domain.com">ihor_tckachuk@domain.com</a> -->
+                  <div class="teacher-desc-email">
+                     ihor_tckachuk@domain.com
+                  </div>
+                  <div class="teacher-desc-number">+380964993252</div>
+               </div>
+            </div>
+            <div class="teacher-desc-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+               ullamcorper et mauris vitae dictum. Mauris tristique, dui ut bibendum ornare, felis sapien venenatis
+               justo, ac sagittis nibh urna sed odio. Mauris lacus neque, mattis faucibus dignissim ut, mollis vitae
+               turpis. Maecenas tristique lorem magna, pharetra sodales arcu lobortis quis.</div>
+            <a class="teacher-desc-map" href=".">toggle map</a>
+         </div>
+      </div>
+   </div>
+   <script type="text/javascript" src="../build/app.js"></script>
+
+
+   <script src="js/app.js"></script>
+</body>
+
 </html>

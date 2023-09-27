@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'typoslab';
+    src: url('typoslab_irregular_shadowed_demo-webfont.woff2') format('woff2'),
+         url('typoslab_irregular_shadowed_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
